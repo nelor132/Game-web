@@ -11,11 +11,10 @@ body {
 .header{
     margin-top: -1px;
     background-image: url('/image/bg\ image\ 1.jpeg');
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 1440px;
-    height: 960px;
+    background-size:cover
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +26,7 @@ body {
     justify-content: space-around;
     flex-direction: row;
     height: 100px;
-    width: 1340px;
+    width: 70%;
     font-family: "Open Sans", sans-serif; 
     font-size: 16px;
     font-weight: 600;
@@ -162,7 +161,7 @@ body {
 }
 
 .main {
-    width: 1440px;
+    width: 100%;
 }
 
 .section1 {
@@ -170,8 +169,8 @@ body {
     background-image: url('/image/bg\ image\ 2.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 1440px;
+    background-size: cover;
+    width: 100%;
     height: 1052px;
     display: flex;
     justify-content: space-around;
@@ -284,7 +283,7 @@ body {
 
 .section2 {
     margin: 0;
-    width: 1440px;
+    width: 100%;
     height: 900px;
 }
 
@@ -292,8 +291,8 @@ body {
     background-image: url('/image/Group\ \(1\).jpeg');
     background-repeat: no-repeat;
     background-position: start;
-    background-size: contain;
-    width: 1440px;
+    background-size: cover;
+    width: 100%;
     height: 900px;
     filter: brightness(0.7); 
 }
@@ -303,7 +302,7 @@ body {
     justify-content: space-around;
     align-items: end;
     flex-direction: column;
-    width: 1440px;
+    width: 100%;
     height: 800px;
     margin-left: -16rem;
 }
@@ -358,8 +357,8 @@ body {
     background-image: url('/image/Group\ 4.jpeg');
     background-repeat: no-repeat;
     background-position: start;
-    background-size: contain;
-    width: 1440px;
+    background-size: cover;
+    width: 100%;
     height: 1000px;
     filter: brightness(0.6); 
     margin-top: -1.24rem;
@@ -429,7 +428,7 @@ body {
 
 .section4 {
     margin-top: -2rem;
-    width: 1440px;
+    width: 100%;
     height: 600px;
     background-color: black;
     display: flex;
@@ -510,7 +509,7 @@ body {
 }
 
 .footer {
-    width: 1440px;
+    width: 100%;
     height: 120px;
     display: flex;
     justify-content: center;
