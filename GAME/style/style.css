@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+body {
+    margin: 0;
+    color: white;
+    background-color: black;
+}
+
+.header{
+    margin-top: -1px;
+    background-image: url('/image/bg\ image\ 1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1440px;
+    height: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 100px;
+    width: 1340px;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 10%;
+}
+
+.header__nav {
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    
+}
+
+.header__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header__platform-link {
+    width: 30px;
+    height: 27px;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.header__title {
+    margin: 0;
+    height: 90px;
+    font-family: "BenchNine", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107px;
+    letter-spacing: 3px;
+}
+
+.header__subtitle {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.header__button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit; 
+    font: inherit;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px;
+    font-weight: 700;
+    width: 260px;
+    height: 60px;
+    background-color: rgb(255, 181, 72);
+    color:black;
+    cursor: pointer;
+}
+
+.header__scroll-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 3rem;
+}
+
+.header__scroll-link {
+    margin: 0;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.button_scroll {
+    cursor: pointer;
+}
+
+.header__language-select {
+    background-color: inherit;
+    text-transform: uppercase;
+    border:none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+#mySelect {
+    width: 80px;
+    color:white;
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+#mySelect option {
+    
+    color:white;
+    font-weight: 700;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#mySelect option:checked {
+    background-color: inherit;
+    color: rgb(255, 181, 72);
+}
+
+#mySelect:focus {
+    background-color: inherit;
+}
+
+.main {
+    width: 1440px;
+}
+
+.section1 {
+    margin-top: -2px;
+    background-image: url('/image/bg\ image\ 2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1440px;
+    height: 1052px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    object-fit: cover; 
+    z-index: 0;
+}
+
+.section1__div {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    width: 500px;
+    height: 800px;
+}
+
+.section1__p1 {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.section1__h2 {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107px;
+    text-transform: uppercase;
+}
+
+.section1__p2 {
+    margin: 0;
+    margin-top: 10rem;
+    margin-left: 15rem;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 360px;
+    height: 176px;
+}
+
+.photo-library {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 700px;
+    overflow: hidden; /* Скрываем все, что выходит за пределы контейнера */
+  position: relative; /* Для правильного позиционирования */
+  width: 300px;
+
+}
+
+.photo{
+    width: 500px;
+    height: 600px;
+    position: absolute; /* Абсолютное позиционирование для перекрытия */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /
+
+}
+
+.photo:nth-child(2) {
+    left: 200%; /* Смещаем второе изображение */
+    transform: translateX(-200%); /* Сдвиг на ширину предыдущего */
+  }
+  
+  .photo:nth-child(3) {
+    left: 200%; /* Смещаем третье изображение */
+    transform: translateX(-1200%); /* Сдвиг на ширину двух предыдущих */
+  }
+  
+  .photo {
+    object-fit: cover; /*  Важное свойство! Картинки подгоняются под контейнер */
+      /* Или use object-fit: contain to keep aspect ratio and may leave empty space */
+  }
+
+.photo-library {
+    position: relative; /* Важно! Для абсолютного позиционирования изображений */
+    width: 600px; /* Ширина контейнера */
+    height: 700px;
+    overflow: hidden; /* Скрываем выступающие части изображений */
+}
+  
+.photo-library img {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0;
+    
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+  
+.photo-library img:nth-child(n+2) { 
+    margin-left: -20px; /* Отступ влево для перекрытия */
+}
+  
+.photo-library img:hover { 
+    z-index: 2; /* При наведении на изображение, оно поднимается наверх */
+}
+
+.section2 {
+    margin: 0;
+    width: 1440px;
+    height: 900px;
+}
+
+.section2__inner {
+    background-image: url('/image/Group\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: contain;
+    width: 1440px;
+    height: 900px;
+    filter: brightness(0.7); 
+}
+
+.section2__div2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    flex-direction: column;
+    width: 1440px;
+    height: 800px;
+    margin-left: -16rem;
+}
+
+.section2__title {
+    margin: 0;
+    margin-top: 12rem;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.section2__subtitle {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107px;
+}
+
+.section2__feature-title {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(255, 181, 72);
+}
+
+.section2__feature-description {
+    margin: 0;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 340px;
+    height: 78px;
+    text-align: end;
+}
+
+.section2__feature-title {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgb(255, 181, 72);
+}
+
+.section3 {
+    background-image: url('/image/Group\ 4.jpeg');
+    background-repeat: no-repeat;
+    background-position: start;
+    background-size: contain;
+    width: 1440px;
+    height: 1000px;
+    filter: brightness(0.6); 
+    margin-top: -1.24rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    
+}
+
+.section3__title {
+    margin: 0;
+    margin-left: 10rem;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.section3__subtitle {
+    width: 300px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-left: 10rem;
+    font-family: "BenchNine", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107px;
+}
+
+.section3__div {
+    margin-left: 10rem;
+    width: 573.2px;
+    height: 300.69px;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+.section3__requirements-term {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color:rgb(255, 181, 72);
+}
+
+.section3__requirements-description {
+    margin: 0;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.section3__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 4fr)); /* Создаём две колонки, которые могут меняться при изменении размеров окна */
+    grid-auto-rows: minmax(100px, 4fr); /* Автоматическая высота строк, минимум 100px */
+    gap: 10px; /* Зазор между элементами */
+  }
+  
+.section3__requirements {
+    padding: 10px;
+    text-align: start;
+    border: 1px solid #ccc;
+  }
+
+.section4 {
+    margin-top: -2rem;
+    width: 1440px;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter__button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit; 
+    font: inherit;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 22px;
+    font-weight: 700;
+    width: 260px;
+    height: 60px;
+    background-color: rgb(255, 181, 72);
+    color:black;
+    cursor: pointer;
+}
+
+.newsletter__intro {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.newsletter__title {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 107px;
+    text-transform: uppercase;
+}
+
+.newsletter__form {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction:row;
+    gap: 1rem;
+}
+
+.newsletter__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter__description {
+    margin: 0;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 650px;
+    height: 137px;
+}
+
+.newsletter__label {
+    margin: 0;
+    font-family: "BenchNine", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.newsletter__input {
+    width: 253px;
+    height: 30px;
+}
+
+.footer {
+    width: 1440px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}

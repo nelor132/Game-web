@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Doc</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <img src="/image/logo.svg" alt="#" loading="lazy">
+            <div class="header__nav">
+                <p>MAIN</p>
+                <p>about</p>
+                <p>game features</p>
+                <p>System requirements</p>
+                <p>quotes</p>
+            </div>
+                <div class="header__actions">
+                    <select id="mySelect" class="header__language-select" type="hidden">
+                        <option value="item1">eng</option>
+                        <option value="item2">rus</option>
+                        <option value="item3">fra</option>
+                        <option value="item4">deu</option>
+                    </select>
+                  <a href="https://www.xbox.com/ru-RU/games/store/indiana-jones-and-the-great-circle/9N8FQ28Z6QX3/0010" class="header__platform-link">
+                    <img src="/image/xbox icon.svg" alt="Xbox" loading="lazy">
+                  </a>
+                  <a href="https://store.steampowered.com/app/275850/No_Mans_Sky/" class="header__platform-link">
+                    <img src="/image/steam icon.svg" alt="Steam" loading="lazy">
+                  </a>
+                </div>
+            </div>
+            <div class="header__content">
+            <h1 class="header__title">SURVIVE AT ALL COSTS</h1>
+            <h2 class="header__subtitle">Experience new social battle royale game</h2>
+            <button id="myBtn"  class="header__button">Buy Now on Steam \ $14.99</button>
+            <script>    
+            const button = document.getElementById('myBtn');
+            button.addEventListener('click', confirmAction);
+            function confirmAction() {
+                if (confirm("Вы Уверены что хотите купить Игру?")) {
+                alert("Сейчас произойдёт переход на покупку игры!");
+                window.location.href = "https://miro.com/app/board/uXjVNGw7Jv8=/"; // Замените на нужный URL
+                } else {
+                alert("Вы не купили Игру!");
+                }
+            }
+            </script>
+        </div>
+        <div class="header__scroll-down">
+            <h3 class="header__scroll-link">The story</h3>
+            <img id="myBtn2" class="button_scroll" src="/image/scroll down.svg" alt="#" loading="lazy">
+            <script>    
+                const button2 = document.getElementById('myBtn2');
+            button2.addEventListener('click', smoothScrollDown);
+
+            function smoothScrollDown() {
+            // Получаем текущую позицию прокрутки
+            const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Плавно прокручиваем на 1000 пикселей вниз
+            window.scrollTo({
+                top: currentScrollPosition + 1000,
+                behavior: 'smooth'
+            });
+            }
+            </script>
+        
+        </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section1">
+            <div class="section1__div">
+                <p class="section1__p1">What is SOS?</p>
+                <h2 class="section1__h2">
+                    social battle royale game
+                </h2>
+                <p class="section1__p2">
+                    Each round, you and 15 other contestants compete 
+                    toescape a deadly island filled with monsters. 
+                    The trick is: three people can survive. Will you 
+                    runsolo or form friendships with others to escape? 
+                    Making the right decisions could be thedifference 
+                    between life and death.
+                </p>
+            </div>
+            <div class="photo-library">
+                <img class="photo" src="/image/screenshot 1.jpeg" alt="#" loading="lazy">
+                <img class="photo" src="/image/screenshot 2.jpeg" alt="#" loading="lazy">
+                <img class="photo" src="/image/screenshot 3.jpeg" alt="#" loading="lazy">
+            </div>
+            
+        </section>
+        <section class="section2">
+            <div class="section2__inner">
+                <div class="section2__div2">
+                <p class="section2__title">
+                    What’s so special?
+                </p>
+                <h3 class="section2__subtitle">
+                    FEATURES
+                </h3>
+                <h4 class="section2__feature-title">SURVIVE AT ALL COSTS</h4>
+                <p class="section2__feature-description">
+                    You have 30 minutes to find a relic, 
+                    signal for extraction, and grabone 
+                    of three spots on the rescue chopper.
+                </p>
+                <h4 class="section2__feature-title">CREATE ALLIES AND ENEMIES</h4>
+                <h4 class="section2__feature-title">IMPRESS THE AUDIENCE</h4>
+                </div>
+                
+            </div>
+            
+        </section>
+        <section class="section3">
+            <p class="section3__title">
+                Can My Computer Run this game?
+            </p>
+            <h3 class="section3__subtitle">
+                system requirements
+            </h3>
+            <div class="section3__div">
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">OS</h4>
+                    <p class="section3__requirements-description">
+                        Windows 7 64-bit only
+                        (No OSX support at this time)
+                    </p>
+                </div>
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">PROCESSOR:</h4>
+                    <p class="section3__requirements-description">
+                        Intel Core 2 Duo @ 2.4 GHZ 
+                        or AMD Athlon X2 @ 2.8 GHZ
+                    </p>
+                </div>
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">MEMORY:</h4>
+                    <p class="section3__requirements-description">
+                        16 GB RAM
+                    </p>
+                </div>
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">storage:</h4>
+                    <p class="section3__requirements-description">
+                        18 GB available space
+                    </p>
+                </div>
+
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">GRAPHICS:</h4>
+                    <p class="section3__requirements-description">
+                        NVIDIA GeForce RTX3080TI or
+                        AMD Radeon RX 7700XT
+                        DirectX12
+
+                    </p>
+                </div>
+                <div class="section3__requirements">
+                    <h4 class="section3__requirements-term">READY?</h4>
+                    <p class="section3__requirements-description">
+                        THEN LET'S PLAY!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+            <div class="footer__div">
+                <p class="newsletter__intro">
+                    Want to stay in touch?
+                </p>
+                <h4 class="newsletter__title">
+                    newsletter SUBSCRIBE 
+                </h4>
+                <p class="newsletter__description">
+                    In order to start receiving our news, 
+                    all you have to do is enter your email 
+                    address. Everything else will be taken 
+                    care of by us. We will send you emails 
+                    containing information about 
+                    game. We don’t spam.
+                </p>
+                <div class="newsletter__form">
+                    <label class="newsletter__label" for="email">Your email address</label>
+                    <input class="newsletter__input" type="email" id="email" value="aliciliniavopir@gmail.com">  <!--  Добавим атрибут id для label -->
+                    <button id="clearBtn" class="newsletter__button" type="submit">Subscribe now</button>
+                    
+                    <script>    
+
+                        const button3 = document.getElementById('clearBtn');
+                        button3.addEventListener('click', confirmAction2);
+            
+                        function confirmAction2() {
+                            if (confirm("Вы Уверены что хотите информацию об игре?")) {
+                            alert("Очень рады!!");
+                            window.location.href = "https://vk.com/feed";
+                            } else {
+                            alert("Вы не подписались на рассылку, это печально(");
+                            }
+                        }
+
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="header__container">
+            <img src="/image/logo.svg" alt="#" loading="lazy">
+            
+            <div class="header__nav">
+                <p>MAIN</p>
+                <p>about</p>
+                <p>game features</p>
+                <p>System requirements</p>
+                <p>quotes</p>
+
+                    <a href="https://www.example.com" class="logo">
+                    <img  src="/image/facebook.svg" alt="#" loading="lazy">
+                  </a>
+                  <a href="https://www.example.com" class="logo">
+                    <img  src="/image/youtube.svg" alt="#" loading="lazy">
+                  </a>
+                  <a href="https://www.example.com" class="logo">
+                    <img  src="/image/twitter.svg" alt="#" loading="lazy">
+                  </a>
+                  <a href="https://www.example.com" class="logo">
+                    <img  src="/image/twitch.svg" alt="#" loading="lazy">
+                  </a>
+                
+            </div>
+    </footer>
+</body>
+</html>
